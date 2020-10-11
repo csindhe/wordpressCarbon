@@ -1,0 +1,592 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+li {
+    list-style: none
+}
+
+
+/* =============================================================================
+      My CSS
+      ========================================================================== */
+
+/* ---- base ---- */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background: #111; */
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    /* vertical-align:bottom; */
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* background-image: url(../images/logo.jpg);  commented for checking banner*/
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.headerarea {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    min-height: 15vh; /*temp*/
+}
+
+.header-container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*
+    Banner related css
+*/
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    text-transform: uppercase;
+}
+.posrel {
+    position: relative;
+}
+.cfw {
+    width: 100%;
+    display: block;
+    float: left;
+}
+* {
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+.particles-jsout {
+    position: relative;
+}
+.banner_content {
+    height: 540px;
+}
+.banner_container {
+    padding-top: 86px;
+    background: url(../images/banner.jpg) no-repeat top right / cover;
+    background-attachment: fixed;
+}
+.banner_container_new {
+    /* padding-top: 86px; */
+    background-attachment: fixed;
+}
+.particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.particles-js-new {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background-image: url(../images/logo.jpg); */
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.banner_content {
+    height: 540px;
+}
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.dis_table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.dis_tablecel {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.banner_content_title {
+    color: #909090;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+    font-size: 24px;
+    margin: 0px;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0px;
+}
+.css_blink {
+    -webkit-animation: blinker 1s linear infinite;
+    animation: blinker 1s linear infinite;
+}
+.banner_content_tag {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.banner_content_title span {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 72px;
+}
+a {
+    text-decoration: none;
+}
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.cs-container {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.cs-header {
+    display: flex;
+    flex-basis: 100%;
+    order: 0;
+    /* margin: 0.5%; */
+    background: Linear-gradient(to Right,#E75B01,#FAD324);
+    justify-content: center;
+    /* background: linear-gradient(266deg, #e75b01, #fad324);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite; */
+}
+.cs-header-cont {
+    display: flex;
+    flex-basis: 100%;
+    order: 0;
+}
+.cs-main {
+    display: flex;
+    flex-basis: 100%;
+    order: 1
+}
+.cs-footer {
+    display: flex;
+    flex-basis: 100%;
+    order: 2
+}
+.cs-logo-div {
+    display: flex;
+    flex-basis: 20%;
+    order: 0
+}
+.cs-empty-div {
+    display: flex;
+    flex-basis: 0%;
+    order: 1
+}
+.cs-menu-div {
+    display: flex;
+    flex-basis: 80%;
+    order: 2;
+}
+.logo_title {
+    letter-spacing: 0px;
+    font-size: 24px;
+    margin: 0px;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0px;
+    font-family: Antipasto Pro;
+    padding-left: 2%;
+    color: #ffffff;
+    font-size: 3em;
+}
+.cs-menu-div .menu-header-navigation-container {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.cs-menu-div .menu-header-navigation-container #menu-header-navigation {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item {
+    display: flex;
+    flex-basis: 10%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-family: Antipasto Pro;
+    line-height: 75px;
+    /* padding: 1%; */
+    font-weight: 400;
+}
+.cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item a {
+    color: #ffffff;
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+.cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item:hover {
+    /* background: black; */
+    /* border-radius: 50px; */
+}
+.cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item a:hover {
+    color: black
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+
+@media only screen and (min-width: 1200px) {
+    .cs-header-cont {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .cs-header-cont {
+        max-width: 960px;
+    }
+    .cs-logo-div {
+        display: flex;
+        flex-basis: 10%;
+        order: 0;
+    }
+    .logo_title {
+        font-size: 2em;
+    }
+    .cs-menu-div {
+        display: flex;
+        flex-basis: 90%;
+        order: 2;
+    }
+    .cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item a {
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .cs-menu-div .menu-header-navigation-container #menu-header-navigation {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .cs-header-cont {
+        max-width: 720px;
+    }
+    .cs-logo-div {
+        display: flex;
+        flex-basis: 5%;
+        order: 0;
+    }
+    .logo_title {
+        font-size: 1.5em;
+    }
+    .cs-menu-div {
+        display: flex;
+        flex-basis: 95%;
+        order: 2;
+    }
+    .cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item a {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .cs-menu-div .menu-header-navigation-container #menu-header-navigation {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .cs-menu-div .menu-header-navigation-container #menu-header-navigation .menu-item {
+        display: flex;
+        flex-basis: 13%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+        font-family: Antipasto Pro;
+        line-height: 75px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cs-header-cont {
+        max-width: 720px;
+    }
+}
